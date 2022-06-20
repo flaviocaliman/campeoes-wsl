@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSL Champs</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Últimas(os) Campeãs(ões) do World Surf League!</h1>
+    </header>
+    <section>
+        
+        <div>
+            <p>Ano do Campeonato (a partir de 2015):
+                <input type="number" name="txtano" id="txtano" min="2015" max="2022">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="radsex" id="mas">
+                <label for="mas">Masculino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>Preencha os campos acima para conhecer a(o) campeã(ão) de cada ano!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
